@@ -1,0 +1,47 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.about-section-parent-wrapper{
+    margin-top:10vh !important;
+}
+.about-sub-heading{
+    font-weight:600;
+    font-size:19px;
+    color: #0156ED;
+}
+.about-heading{
+    font-weight:900;
+    color: #0156ED;
+    font-size:38px;
+}
+.about-description{
+    font-size:14px;
+}
+.about-read-more-btn {
+    background-color: #0156ED;
+    color: white;
+    font-weight: 600;
+    border: unset !important;
+}
+
+.read-more{
+    display: none;
+}
+
+.read-more-class{
+    display: block;
+}
+
+@media screen and (max-width:990px){
+    .about-heading{
+        font-size:20pt;
+        margin-top:20pt;
+    }
+    .about-sub-heading{
+        font-size:12pt;
+    }
+    .about-description{
+        font-size:9pt;
+    }
+}

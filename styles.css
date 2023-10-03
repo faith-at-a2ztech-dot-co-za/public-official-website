@@ -1,0 +1,772 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+body{
+   
+}
+
+a {
+    text-decoration: none;
+}
+#focus img, #mid img, #smartboards img, #accessories img {
+    width: 100%;
+}
+
+.overlay_black {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.overlay_white {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#home .btn-primary {
+    border: none;
+    background-color: #273051;
+    color: #d0c9a8;
+}
+
+header#home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header #logo {
+    background-color: #fff;
+}
+header section div {
+    color: #fff;
+}
+header h2 {
+    font-weight: 300;
+    color: #d0c9a8;
+}
+header#home p {
+    text-transform: uppercase;
+}
+header a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #273051;
+    color: #d0c9a8;
+}
+
+.navbar {
+    background-color: #fff;
+}
+.navbar img {
+    height: 39px;
+}
+.navbar .nav-link {
+    color: #1f489c;
+}
+.navbar .nav-link:hover {
+    color: #d0c9a8;
+}
+
+.nav-pills .nav-link {
+    color: #619ea3;
+}
+.nav-pills .nav-link.active {
+    background-color: #619ea3;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background: none;
+}
+.blockquote-footer {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#tech-partners .container {
+    overflow: hidden;
+}
+.marquee-content {
+      display: flex;
+      animation: scrolling 50s linear infinite;
+}
+.marquee-item {
+      flex: 0 0 10vw;
+      margin: 0 1vw;
+}
+.marquee-item img {
+    display: block;
+    width: 100%;
+} 
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translatex(-144vw); }
+}
+    
+
+/* Home START */
+
+#BG {
+    height: 100%;
+}
+#BG section {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+}
+#BG section .bg {
+    height: 100%;
+}
+#BG #education .bg, header#focus.edu {
+    background: url(3.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#BG #business .bg, header#focus.biz {
+    background: url(1.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#BG section .bg .overlay_black {
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    header #logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px 40px;
+        text-align: center;
+    }
+    header #logo img {
+        width: 100px;
+    }
+    header section div:first-of-type {
+        padding-bottom: 150px;
+    }
+    header section div:last-of-type {
+        padding-top: 100px;
+    }
+    header h2 {
+        font-size: 2em;
+    }
+
+    #BG section {
+        width: 100%;
+        height: 50%;
+    }
+    #BG section:first-of-type {
+        padding-bottom:5px;
+    }
+    #BG section:last-of-type {
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    header section {
+        width: 900px;
+    }
+    header section div {
+        display: inline-block;
+        float: left;
+    }
+    header section div:not(#logo) {
+        width: 300px;
+    }
+    header section div:first-of-type {
+        margin-right: 300px;
+    }
+    header section div:last-of-type {
+        text-align: right;
+    }
+    header #logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 50px 50px 40px;
+    }
+    header #logo img {
+        width: 150px;
+    }
+    header h2 {
+        font-size: 3em;
+        color: #d0c9a8;
+    }
+    header p {
+        text-transform: uppercase;
+    }
+    header a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #273051;
+        color: #d0c9a8;
+    }
+
+    #BG section:first-of-type {
+        padding-right:5px;
+    }
+    #BG section:last-of-type {
+        padding-left: 5px;
+    }
+}
+
+/* Home END */
+
+/* focus Start */
+
+@media only screen and (min-width: 320px) {
+
+    .youtube-video {
+        aspect-ratio: 16/9;
+        width: 100%;
+    }
+
+    header#focus {
+        margin-top: 30px;
+        color: #fff;
+    }
+
+    header#focus .overlay_black {
+        padding: 60px 30px 100px;
+    }
+
+    header#focus h2 span {
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+    header#focus h2 span:nth-of-type(1) {
+        color: #fff;
+    }
+    header#focus h2 span:nth-of-type(2), #case-studies h2 {
+        background-color: #f3ec78;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        font-weight: 700;
+    }
+    header#focus.edu h2 span:nth-of-type(2) {
+        background-image: linear-gradient(45deg, #f6c66d, #619ea3);
+    }
+    header#focus.biz h2 span:nth-of-type(2) {
+        background-image: linear-gradient(45deg, #5ce1e6, #5e17eb);
+    }
+    header#focus h2 span:nth-of-type(3) {
+        color: #fff;
+    }
+    header#focus hr {
+        border-top: 2px dashed #fff;
+    }
+    .empower2k-vector {
+        position: relative;
+        z-index: 1000;
+        width: 100px;
+    }
+    .empower2k-vector#AssetB {
+        margin-top: -95px;
+        margin-bottom: -4px;
+   }
+    .empower2k-vector#AssetA {
+        margin-top: -78px;
+        margin-bottom: -40px;
+        margin-left: 209px;
+    }
+
+    #empower2k .carousel {
+        background: url(2.jpg) no-repeat center top;
+        background-size: cover;
+    }
+    #empower2k .carousel-item {
+        height: 500px;
+        color: #fff;
+    }
+    #empower2k .carousel-item.green {
+        background-color: rgba(97, 158, 163, 0.95);
+    }
+    #empower2k .carousel-item.orange {
+        background-color: rgba(246, 198, 109, 0.95);
+    }
+    #empower2k .carousel-item.grey {
+        background-color: rgba(45, 45, 45, 0.95);
+    }
+    #empower2k .carousel-item .inner {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 200px;
+    }
+    #empower2k .carousel-item h5 {
+        text-transform: uppercase;
+    }
+    #empower2k .carousel-item h5 i {
+        margin-right: 10px;
+    }
+    #empower2k .carousel-item hr {
+        border-top: 2px dashed #fff;
+    }
+    
+    #empower2k-intro p, #empower2k-more p {
+        margin-bottom: 0;
+    }
+    #empower2k-intro {
+        padding: 30px 30px;
+        background-color: #f7f7f7;
+    }
+    #empower2k-intro .col-md-8 {
+        padding-top: 30px;
+    }
+    #empower2k-intro h2 {
+        text-align: right;
+    }
+    #empower2k-intro p {
+        color: #619ea3
+    }
+    #empower2k-intro span {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #f6c66d;
+    }
+    
+    #empower2k-more {
+        text-transform: uppercase;
+        text-align: right;
+    }
+    #empower2k-more h6 {
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 0;
+        font-weight: 600;
+        color: #f6c66d;
+    }
+
+    #classroomai {
+        padding: 0 30px 30px;
+        background-color: #0B1437;
+        color: #fff;
+    }
+    #classroomai .logo {
+        padding: 30px 0 15px;
+    }
+    #classroomai a {
+        padding: 15px 10px;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        background-color: #fff;
+    }
+    #classroomai-more, #smartboards-more {
+        padding: 30px 0;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    #classroomai-more h6, #smartboards-more h6 {
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 0;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    footer {
+        padding: 15px 0 15px;
+    }
+    footer p {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 0.8em;
+    }
+    footer p a {
+        font-weight: 600;
+        color: #444;
+    }
+
+    #mid {
+        position:relative;
+        max-width: 600px;
+        margin-top: -50px;
+        margin-bottom: -152px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #444;
+    }
+    #mid .row * {
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+    }
+    #mid .col-sm-4 {
+        width: 33.33333%;
+        text-align: center;
+    }
+
+    #mid .icon {
+        margin: auto;
+        padding: 20px 0 14px;
+        border-radius: 20px;
+        background-image: linear-gradient(45deg, #7cfbff, #4d59ff);
+    }
+    #mid i {
+        font-size: 2em;
+        color: #fff;
+    }
+    #mid h5 {
+        margin-top: 10px;
+    }
+
+    #smartboards {
+        padding: 0;
+    }
+    #smartboards .col-md-4 {
+        /*margin-top: -82px;*/
+    }
+    #smartboards .col-md-8 {
+        padding: 30px;
+    }
+    #smartboards h2 {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #5e17eb;
+    }
+    #smartboards h6 {
+        color: #444;
+    }
+    #smartboards hr {
+        border-top: 2px dashed #444;
+    }
+    #smartboards p {
+        color: #444;
+    }
+    #smartboards .row * {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #smartboards-more {
+        padding: 30px 0;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    #smartboards-more h6 {
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 0;
+        font-weight: 600;
+        color: #444;
+    }
+
+    #accessories {
+        background: url(biz3.png) no-repeat center top;
+        background-size: cover;
+        background-attachment: fixed;
+        color: #fff;
+    }
+    #accessories .col-md-6:last-of-type {
+        padding-top: 30px;
+    }
+    #accessories h4 {
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: 600;
+    }
+    #accessories hr {
+        border-top: 2px dashed #5ce1e6;
+    }
+    #accessories .overlay_black {
+        padding: 50px 20px;
+    }
+    #accessories-more {
+        padding: 0;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    #accessories-more h6 {
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 0;
+        font-weight: 600;
+        color: #fff;
+    }
+    #accessories-more a {
+        padding: 10px 15px;
+        background-color: #5ce1e6;
+        color: #fff;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+
+    #retail {
+        padding: 50px 15px;
+        background-color: #f8f8f8;
+    }
+    #retail h2 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 2em;
+        color: #273051;
+    }
+    #retail hr {
+        border-top: 2px dashed #d0c9a8;
+    }
+
+    #retail img {
+        height: 50px;
+    }
+
+    #edusyms {
+        background-color: #93c33b;
+    }
+    #edusyms p {
+        color: #fff;
+    }
+
+    #tech-partners .col {
+
+    }
+    #tech-partners img {
+        width: 100px;
+        height: 100px;
+    }
+    #case-studies {
+        background-image: linear-gradient(90deg, #fff, rgba(97, 158, 163, 0.2));
+    }
+
+    #case-studies h2 {
+        background-image: linear-gradient(45deg, #619ea3, #f6c66d);
+    }
+    #case-studies.biz h2 {
+        background-image: linear-gradient(45deg, #7cfbff, #4d59ff);
+   }
+    #case-studies p {
+        font-size: 1.5em;
+    }
+    
+}
+
+@media only screen and (min-width: 375px) {
+    #empower2k .carousel-item .inner {
+        max-width: 250px;
+    }
+    #empower2k .carousel-item h5 {
+       font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    header#focus .overlay_black {
+        padding: 250px 50px 100px;
+    }
+
+    .empower2k-vector#AssetB {
+        margin-left: 50px;
+   }
+
+    #empower2k-intro {
+        padding: 100px 50px;
+        background-color: #f9f9f9;
+    }
+    #empower2k .carousel-item .inner {
+        max-width: 500px;
+    }
+    #empower2k-intro .col-md-8 {
+        padding-top: 10px;
+    }
+    #empower2k-more h6 {
+        margin-right: 30px;
+    }
+    #classroomai {
+        padding: 50px;
+    }
+    #classroomai .logo {
+        width: 400px;
+        margin-bottom: 30px;
+    }
+    #classroomai-more {
+        padding: 30px 0 0;
+        text-align: left;
+    }
+    #mid .icon {
+        width: 150px;
+        padding: 15px 0 11px;
+    }
+    #smartboards {
+        padding: 150px 0 50px;
+    }
+    #smartboards-more, #accessories-more {
+        padding: 15px 0 0;
+        text-align: left;
+    }
+    #retail img {
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #empower2k-intro {
+        padding: 200px 100px;
+    }
+    #classroomai {
+        padding: 100px 100px;
+    }
+}
+
+@media only screen and (min-width: 1366px){
+    header#focus .overlay_black {
+        padding: 300px 250px 100px;
+    }
+    .empower2k-vector {
+        width: 150px;
+    }
+    .empower2k-vector#AssetB {
+        margin-top: -136px;
+        margin-bottom: -12px;
+        margin-left: 50px;
+    }
+    .empower2k-vector#AssetA {
+        margin-top: -117px;
+        margin-bottom: -62px;
+        margin-left: 209px;
+    }
+    #empower2k-intro img {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    
+    header#focus .overlay_black {
+        padding: 500px 250px 300px;
+    }
+    header#focus hr {
+        max-width: 700px;
+    }
+    header#focus p {
+        max-width: 768px;
+        font-size: 1.2em;
+    }
+    header#focus h2 {
+        font-size: 5em;
+    }
+    header#focus h6 {
+        font-size: 2em;
+    }
+
+    .empower2k-vector {
+        width: 300px;
+    }
+    #empower2k-intro {
+        padding: 0 250px 150px;
+    }
+    #empower2k-intro div.col-md-6{
+        padding: 50px 0 0 100px;
+    }
+    #empower2k-intro p {
+        width: 700px;
+        font-size: 1.5em;
+    }
+    .empower2k-vector#AssetA {
+        margin-top: -233px;
+        margin-bottom: -125px;
+        margin-left: 50px;
+    }
+    .empower2k-vector#AssetB {
+        margin-top: -285px;
+        margin-bottom: -12px;
+        margin-left: 1280px;
+    }
+    #empower2k .carousel-item {
+        height: 700px;
+    }
+    #empower2k .carousel-item .inner {
+        max-width: 1024px;
+    }
+    #empower2k .carousel-item h5 {
+        font-size: 3em;
+    }
+    #empower2k-more {
+        padding: 50px 0;
+        text-align: left;
+    }
+
+    #classroomai {
+        padding: 100px 250px;
+    }
+    #classroomai p {
+        max-width: 700px;
+        font-size: 1.8em;
+    }
+
+    #smartboards .col-md-4 {
+        
+    }
+    #smartboards .col-md-8 {
+        padding: 0 100px 100px 0;
+    }
+
+    #mid {
+        max-width: 950px;
+        margin-top: -163px;
+    }
+    #mid .icon {
+        width: 270px;
+        padding: 50px 0 40px;
+    }
+    #mid i {
+        font-size: 5em;
+    }
+    #mid h5 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 3840px) {
+    header#focus .overlay_black {
+        padding: 550px 600px 350px;
+    }
+    .empower2k-vector {
+        width: 600px;
+    }
+    .empower2k-vector#AssetA {
+        margin-top: -465px;
+        margin-bottom: -251px;
+        margin-left: 50px;
+    }
+    .empower2k-vector#AssetB {
+        margin-top: -570px;
+        margin-bottom: -23px;
+        margin-left: 2540px;
+    }
+    #empower2k-intro {
+        padding: 350px 750px;
+    }
+    #empower2k-intro p {
+        width: 1024px;
+    }
+    #classroomai {
+        padding: 250px 750px;
+    }
+    #classroomai .logo {
+        width: 1024px;
+    }
+    #classroomai p {
+        max-width: 1280px;
+    }
+    #classroomai-more h6, #classroomai-more a, #empower2k-more h6, #empower2k-more a {
+        font-size: 2em;
+    }
+}
+
+/* focus END */
