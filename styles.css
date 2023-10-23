@@ -790,9 +790,15 @@ header a {
 .close_btn{
     font-weight:600 !important;
 }
+
+
+/*testing logic coding start here*/
+
+/*testing logic coding ended here*/
+
 @media screen and (max-width:676px){
     .splash_screen_parent_wrapper{
-        top:24vh;
+        top:20vh;
     }
     .splash_heading{
         font-size:15pt;
