@@ -770,3 +770,26 @@ header a {
 }
 
 /* focus END */
+
+
+/*splash screen coding start here*/
+.splash_screen_parent_wrapper{
+    position:absolute !important;
+    top:30vh;
+}
+.splash_screen_child_wrapper{
+    background-color: #72077B;
+}
+.splash_heading{
+    font-weight: 800;
+}
+.explore_btn{
+    font-weight: 600 !important;
+    background-color: orangered !important;
+}
+@media screen and (max-width:676px){
+    .splash_screen_parent_wrapper{
+        top:24vh;
+    }
+}
+/*splash screen coding ended here*/
