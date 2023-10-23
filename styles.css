@@ -794,5 +794,15 @@ header a {
     .splash_screen_parent_wrapper{
         top:24vh;
     }
+    .splash_heading{
+        font-size:15pt;
+    }
+    .splash_description{
+        font-size:12pt;
+    }
+    .explore_btn{
+        padding:10px 30px 10px 30px !important;
+        font-size: 10pt;
+    }
 }
 /*splash screen coding ended here*/
