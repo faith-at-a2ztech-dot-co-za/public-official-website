@@ -10,6 +10,9 @@
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap" rel="stylesheet">
 
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-6/9pJSn4dJ3ByQij46S3f5lw6vU3aEFjEMKRd8vH0NpmR/P4ZJmNGf5D5Pi0mlKf6" crossorigin="anonymous">
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
@@ -18,6 +21,7 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="styles.css">
+
 
 </head>
 <body>
@@ -55,10 +59,16 @@
 
 
 <!----codign for the splash screen start here---->
-<div class="container-fluid py-4 splash_screen_parent_wrapper text-white font-weight-bold">
+<div class="container-fluid py-4 splash_screen_parent_wrapper text-white font-weight-bold" id="splash_screen_parent_wrapper">
     <div class="container py-4 splash_screen_child_wrapper d-flex align-items-center">
         <div class="container splash_screen_content_wrapper text-center d-flex justify-content-center align-items-center flex-column py-3">
-            <h1 class="text-center font-weight-bold splash_heading">
+            <div class="cancel_btn_wrapper">
+                <button class="btn btn-sm close_btn text-white bg-danger px-3 py-2" id="cancel_btn">
+                    Close
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </button>
+            </div>
+            <h1 class="text-center font-weight-bold splash_heading mt-4">
                 Exciting News We have a new store !
             </h1>
             <h5>
@@ -76,5 +86,17 @@
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
+
+<script>
+    function closeSplash(){
+        let splash = document.getElementById("splash_screen_parent_wrapper");
+        let button = document.getElementById("cancel_btn");
+
+        button.onclick = function(){
+            splash.style.display = "none";
+        }
+    }
+    closeSplash();
+</script>
 </body>
 </html>

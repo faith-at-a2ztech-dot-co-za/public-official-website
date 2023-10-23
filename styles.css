@@ -787,6 +787,9 @@ header a {
     font-weight: 600 !important;
     background-color: orangered !important;
 }
+.close_btn{
+    font-weight:600 !important;
+}
 @media screen and (max-width:676px){
     .splash_screen_parent_wrapper{
         top:24vh;
