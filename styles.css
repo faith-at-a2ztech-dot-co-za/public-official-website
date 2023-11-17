@@ -775,7 +775,7 @@ header a {
 /*splash screen coding start here*/
 .splash_screen_parent_wrapper{
     position:absolute !important;
-    top:30vh;
+    top:10vh;
 }
 .splash_screen_child_wrapper{
     background-color: #72077B;
@@ -796,9 +796,16 @@ header a {
 
 /*testing logic coding ended here*/
 
+
+@media screen and (min-width:1025px) and (max-width:1440px){
+    .splash_screen_parent_wrapper{
+        top:30vh;
+    }
+}
+
 @media screen and (max-width:676px){
     .splash_screen_parent_wrapper{
-        top:20vh;
+        top:0vh;
     }
     .splash_heading{
         font-size:15pt;
